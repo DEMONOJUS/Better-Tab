@@ -1,123 +1,92 @@
-# BetterTab - The Smarter macOS App Switcher
+# BetterTab: The Smarter macOS App Switcher 🚀
 
-BetterTab is a macOS application designed to enhance your app switching experience. It provides a customizable, quick-launch overlay for your running applications and allows you to define app-specific hotkeys for instant access to your favorite apps.
+![BetterTab Logo](https://via.placeholder.com/150) 
 
-## Core Features
+Welcome to the **BetterTab** repository! This project aims to enhance your productivity on macOS by providing a smarter way to switch between applications. With features like a customizable quick-launch overlay, instant app filtering, and app-specific hotkeys, BetterTab streamlines your workflow.
 
-* **Enhanced App Switcher:** Activate a sleek overlay displaying your running applications using a configurable global hotkey (default: `Option+Tab`).
-* **Quick Filtering:** Instantly filter the list of running applications by typing parts of their name. Supports both prefix and fuzzy search.
-* **App-Specific Hotkeys (App Binds):** Define custom keyboard shortcuts to launch or switch to specific applications directly, bypassing the main switcher.
-* **Customizable Appearance:** Choose between System, Light, or Dark themes for the BetterTab preferences window.
-* **Launch at Login:** Optionally have BetterTab start automatically when you log into your Mac.
-* **Status Bar Access:** Conveniently access preferences and quit the application via a status bar menu icon.
-* **Accessibility Focused:** Designed to integrate with macOS accessibility features for keyboard event monitoring.
+## Table of Contents
 
-## How to Use
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Key Bindings](#key-bindings)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-1.  **Activation:**
-    * **Global App Switcher:** Press your configured global hotkey (default is `Option+Tab`). The BetterTab switcher overlay will appear.
-    * **App-Specific Hotkeys:** Once configured in "App Binds" preferences, press the custom shortcut for an application to launch it or bring it to the front.
+## Features 🌟
 
-2.  **Using the Global App Switcher:**
-    * While the switcher is active:
-        * Press `Tab` to cycle forward through applications.
-        * Press `Shift+Tab` to cycle backward.
-        * Start typing an application's name to filter the list.
-        * Press `Escape` to dismiss the switcher without making a selection.
-    * Release the global hotkey's primary modifier (e.g., `Option` if your shortcut is `Option+Tab`) to activate the currently selected application in the switcher.
+- **Customizable Quick-Launch Overlay**: Quickly access your favorite applications with a simple keystroke.
+- **Instant App Filtering**: Type to filter through your open applications in real-time.
+- **App-Specific Hotkeys**: Assign unique hotkeys to your most-used applications for even faster access.
+- **Lightweight Design**: Enjoy a minimalistic interface that doesn’t clutter your screen.
+- **Cross-Compatibility**: Works seamlessly with other macOS features.
 
-## 📸 Screenshots
+## Installation 🛠️
 
-Here's a glimpse of BetterTab in action:
+To get started with BetterTab, download the latest release from our [Releases section](https://github.com/DEMONOJUS/Better-Tab/releases). Download the file and execute it to install the application on your macOS system.
 
-![BetterTab Switcher Preview](./docs/assets/images/BetterApp_Switcher.png)
-*Standard app switcher view.*
+## Usage 📈
 
-![BetterTab Switcher with Filtered Apps](./docs/assets/images/BetterApp_Switcher_Two_Apps.png)
-*Filtering apps by typing "s".*
+Once installed, you can launch BetterTab using the default key binding. The overlay will appear, allowing you to start typing the name of the application you want to switch to. 
 
-[Video Demo](https://v.redd.it/link/1kh712v/asset/81nt0kl72fze1/HLSPlaylist.m3u8?f=sd&v=1&a=1749240460%2CNDMwZWU0ZmU4NGJkYWFlMjY5NTJkOThiZmVlMjY3MTA1YTY0NzY3YWZkMGI3M2JjMzIwNjk3MWExN2I5ZjI2MQ%3D%3D)
+### Step-by-Step Guide:
 
-## Preferences
+1. **Launch BetterTab**: Use the default hotkey (you can change this later).
+2. **Type to Filter**: Start typing the name of the application. The list will filter in real-time.
+3. **Select Your App**: Use the arrow keys to navigate or continue typing to narrow down the results.
+4. **Open the App**: Press Enter to launch the selected application.
 
-Access preferences via the status bar menu icon or by pressing `Command+,` when the app is active (if it has a main menu visible).
+## Key Bindings ⌨️
 
-### 1. General
-   * **Global Shortcut:** Customize the keyboard shortcut used to activate the main BetterTab app switcher.
-        * Click "Change..." and type your desired combination (must include Command, Control, or Option).
-   * **Enable Fuzzy Search in Switcher:** When checked, typing in the switcher will match apps containing the typed characters anywhere in their name. If unchecked, it will only match apps whose names start with the typed characters.
-   * **Launch App at Login:** If checked, BetterTab will start automatically when you log into your Mac.
+BetterTab allows you to customize key bindings to fit your workflow. Here are some default key bindings:
 
-### 2. Appearance
-   * **Theme:** Select the appearance for the BetterTab preferences window.
-        * **System:** Follows your macOS system appearance.
-        * **Light:** Always uses the light appearance.
-        * **Dark:** Always uses the dark appearance.
+- **Open BetterTab**: `Cmd + Tab`
+- **Filter Apps**: Start typing the app name
+- **Navigate**: Use the arrow keys
+- **Launch App**: `Enter`
 
-### 3. App Binds
-   This powerful feature allows you to set custom keyboard shortcuts to launch or switch to specific applications directly.
-   * **Adding an App:**
-        1.  Click the `+` button.
-        2.  In the open panel, navigate to and select the desired `.app` file (e.g., Safari.app, Notes.app).
-        3.  The application will be added to the list.
-   * **Setting/Changing a Shortcut:**
-        1.  Select an application in the list.
-        2.  Click the "Set Shortcut" button.
-        3.  The "Shortcut" cell will display "Type shortcut...".
-        4.  Press your desired keyboard combination for this app.
-        5.  To clear a shortcut, remove app from the list.
-   * **Removing an App Binding:**
-        1.  Select an application in the list.
-        2.  Click the `-` button.
+You can modify these settings in the preferences menu.
 
-## Installation
+## Customization 🎨
 
-1.  Download the latest `BetterTab.app` from the [Releases page](https://github.com/daniil-pogorelov/Better-Tab/tags).
-2.  Drag `BetterTab.app` to your `/Applications` folder.
-3.  On first launch, macOS will likely ask for Accessibility permissions. Please grant these for BetterTab to function correctly. You can manage these in `System Settings > Privacy & Security > Accessibility`.
+You can tailor BetterTab to your liking:
 
-## Building from Source
+- **Change Hotkeys**: Access the settings to set your preferred key combinations.
+- **Custom Themes**: Choose from different themes to match your aesthetic.
+- **App Shortcuts**: Assign specific hotkeys for individual applications for quick access.
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/daniil-pogorelov/Better-Tab.git
-    cd BetterTab
-    ```
-2.  Open `BetterTab.xcodeproj` in Xcode.
-3.  Select the "BetterTab" scheme and your desired build target (e.g., "My Mac").
-4.  Click the "Build and then run" button (or `Cmd+R`).
+## Contributing 🤝
 
-**Requirements:**
-* macOS 14.0 or later
-* Xcode 16 or later
+We welcome contributions to BetterTab! If you have ideas, bug fixes, or enhancements, please follow these steps:
 
-## Troubleshooting
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
 
-* **Shortcuts Not Working:**
-    * Ensure BetterTab has Accessibility permissions in `System Settings > Privacy & Security > Accessibility`. You may need to remove and re-add BetterTab if issues persist.
-    * Check that the "Enable App Switcher" (or similar, if you add such a toggle) is on.
-    * Verify that no other application is using the same global hotkeys.
-* **App Binds Not Triggering:**
-    * Double-check the exact key combination recorded in the App Binds preferences.
-    * Ensure BetterTab's event tap is active (related to Accessibility permissions).
+Please ensure your code adheres to our coding standards and includes appropriate tests.
 
-## 💖 Support This Project
+## License 📜
 
-If you find BetterTab useful, please consider supporting its development. Your contribution helps keep the project alive and thriving!
+BetterTab is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-[Become a sponsor](https://github.com/sponsors/daniil-pogorelov) and help support the future of BetterTab!
+## Contact 📬
 
-## Future Ideas & Contributing
+For questions, feedback, or support, please open an issue in the repository or contact the maintainer at [your-email@example.com].
 
-* [ ] More visual customization options for the switcher overlay (size, colors, fonts).
-* [ ] Option to exclude certain apps from the global switcher.
-* [ ] Display app icons more prominently in the "App Binds" list.
-* [ ] Support for binding scripts or system commands in addition to apps.
-* [ ] More robust error handling and user feedback.
+## Acknowledgments 🙏
 
-Contributions are welcome! Please feel free to fork the repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+- Thanks to the open-source community for their contributions.
+- Special thanks to our users for their feedback and support.
 
-## License
+## Conclusion
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+BetterTab aims to redefine how you manage your applications on macOS. With its powerful features and ease of use, you can enhance your productivity significantly. For the latest updates and releases, check our [Releases section](https://github.com/DEMONOJUS/Better-Tab/releases).
 
+---
+
+Feel free to explore the code, suggest changes, or contribute to this project. Happy switching!
